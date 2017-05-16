@@ -26,7 +26,8 @@ package com.bayviewglen.zork;
 
 class Command
 {
-    private String commandWord;
+	private Object bag;
+	private String commandWord;
     private String secondWord;
     private Room previousRoom;
     private Room currentRoom;
@@ -94,7 +95,7 @@ class Command
     }
     private void printInventory(Command command){
     	 System.out.println("You have: ");
-    	 if (bag.getNumItems() ==0){
+		if (bag.getNumItems() ==0){
     	 System.out.println("nothing");
     	 }else{
     	 for (int i=0; i<bag.getNumItems(); i++){
