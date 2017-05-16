@@ -28,6 +28,9 @@ class Command
 {
     private String commandWord;
     private String secondWord;
+    private Room previousRoom;
+    private Room currentRoom;
+
 
     /**
      * Create a command object. First and second word must be supplied, but
@@ -73,4 +76,33 @@ class Command
     {
         return (secondWord != null);
     }
+    
+    
+    private void back(Command command)
+    {
+	Room nextRoom = previousRoom;
+    
+    if(nextRoom == null)
+    System.out.println("You haven't gone anywhere yet!");
+    else
+    {
+    currentRoom = nextRoom;
+    
+    System.out.println(currentRoom.getDescription());
+    }
+    
+    }
+    private void printInventory(Command command){
+    	 System.out.println("You have: ");
+    	 if (bag.getNumItems() ==0){
+    	 System.out.println("nothing");
+    	 }else{
+    	 for (int i=0; i<bag.getNumItems(); i++){
+    	 Item currentItem = bag.getInventory().get(i);
+    	 if (currentItem!=null)
+    	 System.out.println(currentItem.getDescription());
+    	 }
+    	 }
+    	}
 }
+
