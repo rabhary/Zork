@@ -154,16 +154,25 @@ class Game {
 			System.out.println("Do you really think you should be eating at a time like this?");
 		} else if (commandWord.equals("inventory")) {
 			printInventory(command);
+			
 		} else if (commandWord.equals("n")) {
-			String direction = "north";
-		} else if (commandWord.equals("s")) {
-			String direction = "south";
-		}
+			command = new Command("go", "north");
+			goRoom(command);
+			} else if (commandWord.equals("s")) {
+				command = new Command("go", "south");
+				goRoom(command);		}
 		else if (commandWord.equals("e")) {
-			String direction = "east";
+			command = new Command("go", "east");
+			goRoom(command);
 		} else if (commandWord.equals("w")) {
-			String direction = "west";
-		}
+			command = new Command("go", "west");
+			goRoom(command);		}
+	 else if (commandWord.equals("u")) {
+		command = new Command("go", "up");
+		goRoom(command);		}
+	else if (commandWord.equals("d")) {
+		command = new Command("go", "down");
+		goRoom(command);		}
 		return false;
 	}
 

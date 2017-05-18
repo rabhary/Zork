@@ -73,7 +73,7 @@ class Room
             exits.put("west", west);
         if(up != null)
             exits.put("up", up);
-        if(up != null)
+        if(down != null)
             exits.put("down", down);
         
     }
@@ -105,7 +105,7 @@ class Room
     private String exitString()
     {
         String returnString = "Exits:";
-		Set keys = exits.keySet();
+		Set<String> keys = exits.keySet();
         for(Iterator iter = keys.iterator(); iter.hasNext(); )
             returnString += " " + iter.next();
         return returnString;

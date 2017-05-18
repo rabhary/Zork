@@ -93,17 +93,17 @@ class Command
     }
     
     }
-    private void printInventory(Command command){
-    	 System.out.println("You have: ");
-		if (bag.getNumItems() ==0){
-    	 System.out.println("nothing");
-    	 }else{
-    	 for (int i=0; i<bag.getNumItems(); i++){
-    	 Item currentItem = bag.getInventory().get(i);
-    	 if (currentItem!=null)
-    	 System.out.println(currentItem.getDescription());
-    	 }
-    	 }
+   // private void printInventory(Command command){
+    //	 System.out.println("You have: ");
+		//if (bag.getNumItems() ==0){
+    	 //System.out.println("nothing");
+    	// }else{
+    	 //for (int i=0; i<bag.getNumItems(); i++){
+    	 //Item currentItem = bag.getInventory().get(i);
+    	 //if (currentItem!=null)
+    	 //System.out.println(currentItem.getDescription());
+    	 //}
+    	 //}
     	}
-}
+//}
 
