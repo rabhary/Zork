@@ -14,7 +14,11 @@ class CommandWords
 {
     // a constant array that holds all valid command words
     private static final String validCommands[] = {
+<<<<<<< Upstream, based on origin/master
         "go", "quit", "help", "eat", "Back", "inventory", "down", "w", "e", "s", "n", "u", "d"
+=======
+        "go", "quit", "help", "eat" 
+>>>>>>> d59930a test
     };
 
     /**
