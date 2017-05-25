@@ -5,7 +5,7 @@ Room Name: Gardeners Shed
 Room Description: You are standing in the middle of the Gardner's shed. Under a jacket, you see a handle of a pick-axe. You also see a gun to your left, but no <br>bullets are seen. To your east, you see a leaf pile along a path.  
 Exit Rooms: E-Leaf Pile
 Room Name: Leaf Pile
-Room Description: You are standing beside a large leaf pile outside of the Gardeners Shed. To the east of you, you see a small window that may be possible to open with assistance of a tool. To the north of you is the front entrance of the castle. 
+Room Description: You are standing beside a large leaf pile outside of the Gardeners Shed. To the east of you, you see a small window that may be possible to open <br> with assistance of a tool. To the north of you is the front entrance of the castle. 
 Exit Rooms: D-Sewer, N-Front Entrance, E-Window
 Room Name: Sewer Entrance
 Room Description:  ...
