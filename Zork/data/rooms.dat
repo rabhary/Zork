@@ -8,86 +8,86 @@ Room Name: Leaf Pile
 Room Description: You are standing beside a large leaf pile outside of the Gardeners Shed. To the east of you, you see a small window that may be possible to open <br> with assistance of a tool. To the north of you is the front entrance of the castle. 
 Exit Rooms: D-Sewer, N-Front Entrance, E-Window
 Room Name: Sewer Entrance
-Room Description:  ...
+Room Description: You are standing in a pool of water. There is a goomba. A foul smell fills the air. Above you is the leaf pile. To the east, you see a gate with a guard out front. 
 Exit Rooms: U-Leaf Pile, E-Riddler's Gate
 Room Name: Front Entrance
-Room Description:  ...
+Room Description: You are standing out front of the house. There is a goomba. To the south,there is a leaf pile. To the North there is a sketchy looking shed.To the east, ou see the main door of the house
 Exit Rooms: S-Leaf Pile, E-Main Door, N-Guards Shed
 Room Name: Open Field 
-Room Description:  You are in an open field with the fence to the east of you. You see a small hole that you may fit through, but it is a tight squeeze.  
+Room Description:  You are in an open field. There is a goomba with the fence to the east of you. You see a small hole that you may fit through, but it is a tight squeeze.  
 Exit Rooms: S-Outside of Fence., E-Clearing
 Room Name: Clearing
-Room Description:  ...
+Room Description:  You are standing in a clearing. There is an open field to your west. To your East is a dark are. To the south is a shed.
 Exit Rooms: W-Open Field, E-Dead End, S-Guards Shed
 Room Name: Guard Shed
-Room Description:  ...
+Room Description:  You are standing in the guards shed. To the North there is a clearing. To the east there is a room labeled armory. To the south is the front entrance of the house. 
 Exit Rooms: N-Clearing, E-Armory, S-Front Entrance 
 Room Name: Dead End
-Room Description:  ...
+Room Description: You are at a dead end. There is a goomba. Go west to go back to the clearing.
 Exit Rooms: W-Clearing
 Room Name: Armory 
-Room Description:  ...
-Exit Rooms: W-Armory, E-Living Room
+Room Description: You are in the armory. There is a sword on the floor. To the west is the guard shed. To the east is the living room.
+Exit Rooms: W-Guard Shed, E-Living Room
 Room Name: Main Door
-Room Description:  ...
+Room Description:  You are at the Main Door. To the west is the front entrance. To the east is the main hallway.
 Exit Rooms: W-Front Entrance, E-Main Hallway
 Room Name: Window
-Room Description:  ...
+Room Description: You are at the window.To the west is the leaf pile. To the east is the Kitchen.
 Exit Rooms: W-Leaf Pile, E-Kitchen
 Room Name: Riddler's Gate
-Room Description:  ...
+Room Description: You are at Riddler's Gate. There is Goomba in front of you. To the west is the sewer entrance. To the east is the sewer exit.
 Exit Rooms: W-Sewer Entrance, E-Sewer Exit
 Room Name: Sewer Exit
-Room Description:  ...
+Room Description:  You are at the Sewer exit. To the west is the riddler's gate. Above you is the kitchen
 Exit Rooms: W-Riddler's Gate, U-Kitchen
 Room Name: Kitchen
-Room Description:  ...
+Room Description:  You are in the kitchen. To the west is an open window. Below you is the sewer exit. To the east is the dining room
 Exit Rooms: W-Window, D-Sewer Exit, E-Dining Room
 Room Name: Main Hallway
-Room Description:  ...
+Room Description: You are in the main Hallway. To the east is the Grand Hall. To the West is the Main door. To the North is the Living room.
 Exit Rooms: E-Grand Hall, W-Main Door, N-Living Room
 Room Name: Living Room
-Room Description:  ...
+Room Description: You are in the Living room. There is a candle stick on the floor. There is a goomba in front of you. To the east is the stairs. To the west is the Armory. To the south is the Main Hallway.
 Exit Rooms: E-Stairs, W-Armory, S-Main Hallway
 Room Name: Stairs
-Room Description:  ...
+Room Description: You are on the Stairs. To the west is the Living room. Above you is the upstairs hallway. To the south is the grand hall.
 Exit Rooms: W-Living Room, U-Upstairs Hallway, S-Grand Hall
 Room Name: Upstairs Hallway
-Room Description:  ...
+Room Description:  You are in the upstairs hallway. There is a goomba in front of you. Below you is the stairs. To the east is the end of the hallway. 
 Exit Rooms: D-Stairs, E-End of Hallway
 Room Name: End of Hallway
-Room Description:  ...
+Room Description: You are at the end of the hallway. To the east is a large bedroom. To the south is the guest bedroom. To the west is the the beginning of the hallways.
 Exit Rooms: E-Master Bedroom, S-Guest Bedroom, W-Upstairs Hallway
 Room Name: Master Bedroom
-Room Description:  ...
+Room Description: You are in the master bedroom. To the west is the hallway. To the south is the bathroom.
 Exit Rooms: W-End of Hallway, S-Bathroom
 Room Name: Guest Bedroom
-Room Description:  ...
+Room Description:  You are in the Guest bedroom. To the north is the hallway. To the east is the bathroom. 
 Exit Rooms: N-End of Hallway, E-Bathroom
 Room Name: Bathroom
-Room Description:  ...
+Room Description: You are in the Bathroom. To the west is the guest bedroom. To the north is the master bedroom. Below you there is a grate that can be removed.
 Exit Rooms: W-Guest Bedroom, N-Master Bedroom, D-Diddy Kong 
 Room Name: Diddy Kong
-Room Description:  ...
+Room Description:  You have found Diddy Kong!!! You must fight him to get to Luigi. 
 Exit Rooms: E-Luigi's Cell, S-Main Armory, W-Ghost Hall, U-Bathroom
 Room Name: Ghost Hall
-Room Description:  ...
+Room Description: Oh no it's King Boo. There is a huge door to the east. To the south you hear music.
 Exit Rooms: E-Diddy Kong, S-Music Hall
 Room Name: Music Hall
-Room Description:  ...
+Room Description: You are in the music hall. There is a Koopa Troopa in front of you. To the north there is a spooky ghost. to the south you hear clown music. To the west is the grand hall.
 Exit Rooms: N-Ghost Hall, S-Fun Hall, W-Grand Hall
 Room Name: Grand Hall
-Room Description:  ...
+Room Description: You are in the grand hall. To the east you hear music. To the south is the stairs. To the west is the main Hallways. To the south is the dining room.
 Exit Rooms: E-Music Hall, S-Stairs, W-Main Hallway, S-Dining room
 Room Name: Dining Room
-Room Description:  ...
+Room Description: You are in the Dining Room. To the north is the grand hall. To the west is the kitchen. To the east is the fun hall.
 Exit Rooms: N-Grand Hall, W-Kitchen, E-Fun Hall
 Room Name: Fun Hall
-Room Description:  ...
+Room Description: You are in the fun hall. To the west is the dining room. To the east is the main armory. To the north you hear music.
 Exit Rooms: W-Dining Room, E-Main Armory, N-Music Hall
 Room Name: Main Armory 
-Room Description:  ...
+Room Description: You are in the main armory. There is  rifle on the floor.  To the west is the fun hall. To the north is a gigantic door.
 Exit Rooms: W-Fun Hall, N-Diddy Kong
 Room Name: Luigi's Cell
-Room Description:  ...
+Room Description: You have found Lugi!!!!!!! You have won the game. 
 Exit Rooms: W-Diddy Kong
