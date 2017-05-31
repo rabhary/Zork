@@ -22,16 +22,24 @@ class Room
 {
 	private String roomName;
     private String description;
-    private HashMap<String, Room> exits;        // stores exits of this room.
-
+    private HashMap<String, Room> exits;  
+    private Inventory roomInventory; 
+    // stores exits of this room.
+    private Inventory roomInventory;
     /**
      * Create a room described "description". Initially, it has no exits.
      * "description" is something like "a kitchen" or "an open court yard".
      */
+    public Room(Inventory roomInventory){
+    	roomInventory = new Inventory(); 
+    }
+   
+    
     public Room(String description) 
     {
         this.description = description;
         exits = new HashMap<String, Room>();
+        roomInventory = new Inventory();
     }
 
     public Room() {
@@ -39,17 +47,26 @@ class Room
     	roomName = "DEFAULT ROOM";
     	description = "DEFAULT DESCRIPTION";
     	exits = new HashMap<String, Room>();
+    	roomInventory = new Inventory();
 	}
+    
+    public Inventory getInventory(){
+    	return roomInventory;
+    }
 
+    public Inventory getInventory(){
+    	return roomInventory; 
+    }
+    
     public void setExit(char direction, Room r) throws Exception{
     	String dir= "";
     	switch (direction){
-    	case 'E': dir = "east";break;
-    	case 'W': dir = "west";break;
-    	case 'S': dir = "south";break;
-    	case 'N': dir = "north";break;
-    	case 'U': dir = "up";break;
-    	case 'D': dir = "down";break;
+    	case 'e': dir = "east";break;
+    	case 'w': dir = "west";break;
+    	case 's': dir = "south";break;
+    	case 'n': dir = "north";break;
+    	case 'u': dir = "up";break;
+    	case 'd': dir = "down";break;
     	default: throw new Exception("Invalid Direction");
     	
     	}

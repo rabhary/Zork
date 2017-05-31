@@ -32,34 +32,46 @@ public class Inventory {
 	}
 
 	// the weight that you currently are carrying
-	public int getWeight(){
-		 return weight;
+	public int getWeight() {
+		return weight;
 
 	}
-		 //getter for the inventory ArrayList
-		 public ArrayList<Item> getInventory(){
-		 return inventory;
-		 }
-		 
-		 //getter for the number of inventory
-		 public int getNumItems(){
-		 return inventory.size();
-		 }
-		 
-		 //print out the inventory you have
-		 public String print(){
-		 String words = "";
-		 for (int i = 0; i<inventory.size(); i ++){
-		 if (inventory.get(i)!=null){
-		 words += inventory.get(i).getDescription() + "\n";
-		 }
-		 }
-		 return words;
-		 }
-		 
-		 //get the max weight you can carry
-		 public int getCapacity(){
-		 return MAXVALUE;
-		 }
+
+	// getter for the inventory ArrayList
+	public ArrayList<Item> getInventory() {
+		return inventory;
+	}
+
+	// getter for the number of inventory
+	public int getNumItems() {
+		return inventory.size();
+	}
+
+	// print out the inventory you have
+	public String print() {
+		String words = "";
+		for (int i = 0; i < inventory.size(); i++) {
+			if (inventory.get(i) != null) {
+				words += inventory.get(i).getDescription() + "\n";
+			}
+		}
+		return words;
+	}
+
+	// get the max weight you can carry
+	public int getCapacity() {
+		return MAXVALUE;
+	}
+
+	public Item contains(String name){
+	for (Item i : inventory){
+		if (i.getDescription().equals(name)){
+			return i;
+		}
+	}
+	
+	return null;
+	
 		
 	}
+}
