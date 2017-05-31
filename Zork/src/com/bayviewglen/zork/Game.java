@@ -93,7 +93,7 @@ class Game {
 	public Game() {
 		try {
 			initRooms("data/Rooms.dat");
-<<<<<<< HEAD
+
 			currentRoom = masterRoomMap.get("OUTSIDE_OF_FENCE.");
 			
 			Room tempRoom = masterRoomMap.get("GARDENERS_SHED");
@@ -192,9 +192,7 @@ class Game {
 			
 			tempRoom = masterRoomMap.get("LUIGI'S_CELL");
 			
-//=======
-//>>>>>>> refs/remotes/origin/master
-=======
+
 			currentRoom = masterRoomMap.get("OUTSIDE_OF_FENCE.");
 			
 			Room tempRoom = masterRoomMap.get("GARDENERS_SHED");
@@ -293,9 +291,7 @@ class Game {
 			
 			tempRoom = masterRoomMap.get("LUIGI'S_CELL");
 			
-//=======
-//>>>>>>> refs/remotes/origin/master
->>>>>>> refs/remotes/origin/master
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -374,7 +370,47 @@ class Game {
 		goRoom(command);		}
 	else if (commandWord.equals("d")) {
 		command = new Command("go", "down");
-		goRoom(command);		}
+		goRoom(command);		
+	} else if (commandWord.equals("grab")) {
+			grab(command);
+
+		} else if (commandWord.equals("look")) {
+			look();
+		} else if (commandWord.equals("search")) {
+			search(command);
+		}
+		return false;
+	}
+
+	private void search(Command command) {
+		String secondWord = command.getSecondWord();
+		if (currentRoom.getRoomName().equals("Leaf Pile")){
+			System.out.println("you searched the leaf pile and found a crowbar");
+		}
+		
+		
+	}
+
+	private void look() {
+
+		System.out.println(currentRoom.longDescription());  
+	}
+
+	private void grab(Command command) {
+		String takeWhat = command.getSecondWord();
+		Item i = currentRoom.getInventory().contains(takeWhat);
+		if (i == null)
+			System.out.println("There is no" + takeWhat + "in this room");
+		else {
+			currentRoom.getInventory().removeItem(i);
+			playerInventory.addItem(i);
+		}
+	}
+
+	private void printInventory(Command command) {
+		// TODO Auto-generated method stub
+
+	}
 		return false;
 	}
 
