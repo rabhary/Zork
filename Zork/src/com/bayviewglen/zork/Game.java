@@ -94,6 +94,7 @@ class Game {
 		try {
 			initRooms("data/Rooms.dat");
 			currentRoom = masterRoomMap.get("OUTSIDE_OF_FENCE.");
+<<<<<<< HEAD
 			
 			Room tempRoom = masterRoomMap.get("GARDENERS_SHED");
 			Inventory inv = tempRoom.getInventory();
@@ -182,6 +183,8 @@ class Game {
 			
 			tempRoom = masterRoomMap.get("LUIGI'S_CELL");
 			
+=======
+>>>>>>> refs/remotes/origin/master
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

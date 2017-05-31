@@ -14,9 +14,19 @@ class CommandWords
 {
     // a constant array that holds all valid command words
     private static final String validCommands[] = {
+<<<<<<< HEAD
 
+=======
+<<<<<<< Upstream, based on origin/master
+>>>>>>> refs/remotes/origin/master
         "go", "quit", "help", "eat", "Back", "inventory", "down", "w", "e", "s", "n", "u", "d"
+<<<<<<< HEAD
 
+=======
+=======
+        "go", "quit", "help", "eat" 
+>>>>>>> d59930a test
+>>>>>>> refs/remotes/origin/master
     };
 
     /**
