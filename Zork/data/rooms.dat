@@ -1,9 +1,93 @@
-Room Name: Room 1
-Room Description:  This is room<br>1
-Exit Rooms: E-Room 2
-Room Name: Room 2
-Room Description:  This is Room 2
-Exit Rooms: W-Room 1, U-Room 3
-Room Name: Room 3
-Room Description:  You are upstairs.
-Exit Rooms: D-Room 2
+Room Name: Outside of Fence.
+Room Description:  You are standing outside. East of you is a large fence that you are unable to climb. To the south of you is a gardeners shed. North of you is an <br> open field. 
+Exit Rooms: S-Gardeners Shed, N-Open Field
+Room Name: Gardeners Shed
+Room Description: You are standing in the middle of the Gardner's shed. Under a jacket, you see a handle of a pick-axe. You also see a gun to your left, but no <br>bullets are seen. To your east, you see a leaf pile along a path.  
+Exit Rooms: E-Leaf Pile
+Room Name: Leaf Pile
+Room Description: You are standing beside a large leaf pile outside of the Gardeners Shed. To the east of you, you see a small window that may be possible to open <br> with assistance of a tool. To the north of you is the front entrance of the castle. 
+Exit Rooms: D-Sewer, N-Front Entrance, E-Window
+Room Name: Sewer Entrance
+Room Description:  ...
+Exit Rooms: U-Leaf Pile, E-Riddler's Gate
+Room Name: Front Entrance
+Room Description:  ...
+Exit Rooms: S-Leaf Pile, E-Main Door, N-Guards Shed
+Room Name: Open Field 
+Room Description:  You are in an open field with the fence to the east of you. You see a small hole that you may fit through, but it is a tight squeeze.  
+Exit Rooms: S-Outside of Fence., E-Clearing
+Room Name: Clearing
+Room Description:  ...
+Exit Rooms: W-Open Field, E-Dead End, S-Guards Shed
+Room Name: Guard Shed
+Room Description:  ...
+Exit Rooms: N-Clearing, E-Armory, S-Front Entrance 
+Room Name: Dead End
+Room Description:  ...
+Exit Rooms: W-Clearing
+Room Name: Armory 
+Room Description:  ...
+Exit Rooms: W-Armory, E-Living Room
+Room Name: Main Door
+Room Description:  ...
+Exit Rooms: W-Front Entrance, E-Main Hallway
+Room Name: Window
+Room Description:  ...
+Exit Rooms: W-Leaf Pile, E-Kitchen
+Room Name: Riddler's Gate
+Room Description:  ...
+Exit Rooms: W-Sewer Entrance, E-Sewer Exit
+Room Name: Sewer Exit
+Room Description:  ...
+Exit Rooms: W-Riddler's Gate, U-Kitchen
+Room Name: Kitchen
+Room Description:  ...
+Exit Rooms: W-Window, D-Sewer Exit, E-Dining Room
+Room Name: Main Hallway
+Room Description:  ...
+Exit Rooms: E-Grand Hall, W-Main Door, N-Living Room
+Room Name: Living Room
+Room Description:  ...
+Exit Rooms: E-Stairs, W-Armory, S-Main Hallway
+Room Name: Stairs
+Room Description:  ...
+Exit Rooms: W-Living Room, U-Upstairs Hallway, S-Grand Hall
+Room Name: Upstairs Hallway
+Room Description:  ...
+Exit Rooms: D-Stairs, E-End of Hallway
+Room Name: End of Hallway
+Room Description:  ...
+Exit Rooms: E-Master Bedroom, S-Guest Bedroom, W-Upstairs Hallway
+Room Name: Master Bedroom
+Room Description:  ...
+Exit Rooms: W-End of Hallway, S-Bathroom
+Room Name: Guest Bedroom
+Room Description:  ...
+Exit Rooms: N-End of Hallway, E-Bathroom
+Room Name: Bathroom
+Room Description:  ...
+Exit Rooms: W-Guest Bedroom, N-Master Bedroom, D-Diddy Kong 
+Room Name: Diddy Kong
+Room Description:  ...
+Exit Rooms: E-Luigi's Cell, S-Main Armory, W-Ghost Hall, U-Bathroom
+Room Name: Ghost Hall
+Room Description:  ...
+Exit Rooms: E-Diddy Kong, S-Music Hall
+Room Name: Music Hall
+Room Description:  ...
+Exit Rooms: N-Ghost Hall, S-Fun Hall, W-Grand Hall
+Room Name: Grand Hall
+Room Description:  ...
+Exit Rooms: E-Music Hall, S-Stairs, W-Main Hallway, S-Dining room
+Room Name: Dining Room
+Room Description:  ...
+Exit Rooms: N-Grand Hall, W-Kitchen, E-Fun Hall
+Room Name: Fun Hall
+Room Description:  ...
+Exit Rooms: W-Dining Room, E-Main Armory, N-Music Hall
+Room Name: Main Armory 
+Room Description:  ...
+Exit Rooms: W-Fun Hall, N-Diddy Kong
+Room Name: Luigi's Cell
+Room Description:  ...
+Exit Rooms: W-Diddy Kong
