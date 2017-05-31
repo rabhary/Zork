@@ -22,9 +22,13 @@ class Room
 {
 	private String roomName;
     private String description;
+<<<<<<< HEAD
     private HashMap<String, Room> exits;  
     private Inventory roomInventory; 
     // stores exits of this room.
+=======
+    private HashMap<String, Room> exits;        // stores exits of this room.
+>>>>>>> refs/remotes/origin/master
     private Inventory roomInventory;
     /**
      * Create a room described "description". Initially, it has no exits.

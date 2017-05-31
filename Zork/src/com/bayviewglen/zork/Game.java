@@ -93,6 +93,7 @@ class Game {
 	public Game() {
 		try {
 			initRooms("data/Rooms.dat");
+<<<<<<< HEAD
 			currentRoom = masterRoomMap.get("OUTSIDE_OF_FENCE.");
 			
 			Room tempRoom = masterRoomMap.get("GARDENERS_SHED");
@@ -193,6 +194,108 @@ class Game {
 			
 //=======
 //>>>>>>> refs/remotes/origin/master
+=======
+			currentRoom = masterRoomMap.get("OUTSIDE_OF_FENCE.");
+			
+			Room tempRoom = masterRoomMap.get("GARDENERS_SHED");
+			Inventory inv = tempRoom.getInventory();
+			inv.addItem(new Item("pick-axe"));
+			
+			tempRoom = masterRoomMap.get("LEAF_PILE");
+			inv = tempRoom.getInventory();
+			inv.addItem(new Item("crowbar"));
+			
+			tempRoom = masterRoomMap.get("SEWER_ENTRANCE");
+			inv.addItem(new Item("ENEMY"));
+			
+			tempRoom = masterRoomMap.get("FRONT_ENTRANCE");
+			inv.addItem(new Item("ENEMY"));
+			
+			tempRoom = masterRoomMap.get("OPEN_FIELD");
+			inv = tempRoom.getInventory();
+			inv.addItem(new Item("bagWithKey"));
+			inv.addItem(new Item("ENEMY"));
+			
+			tempRoom = masterRoomMap.get("CLEARING");
+			
+			tempRoom = masterRoomMap.get("GUARD_SHED");
+			inv = tempRoom.getInventory();
+			inv.addItem(new Item("spear"));
+			
+			tempRoom = masterRoomMap.get("DEAD_END");
+			inv.addItem(new Item("ENEMY"));
+			
+			tempRoom = masterRoomMap.get("ARMORY");
+			inv = tempRoom.getInventory();
+			inv.addItem(new Item("sword"));
+			
+			tempRoom = masterRoomMap.get("MAIN_DOOR");
+			inv = tempRoom.getInventory();
+			inv.addItem(new Item(""));
+			
+			tempRoom = masterRoomMap.get("WINDOW");
+			
+			tempRoom = masterRoomMap.get("RIDDLER'S_GATE");
+			inv.addItem(new Item("ENEMY"));
+			
+			tempRoom = masterRoomMap.get("SEWER_EXIT");
+		
+			tempRoom = masterRoomMap.get("KITCHEN");
+			inv = tempRoom.getInventory();
+			inv.addItem(new Item("spork"));
+			
+			tempRoom = masterRoomMap.get("MAIN_HALLWAY");
+			inv = tempRoom.getInventory();
+			inv.addItem(new Item("painting"));
+			inv.addItem(new Item("ENEMY"));
+			
+			tempRoom = masterRoomMap.get("LIVING_ROOM");
+			inv = tempRoom.getInventory();
+			inv.addItem(new Item("candlestick"));
+			inv.addItem(new Item("ENEMY"));
+			
+			tempRoom = masterRoomMap.get("STAIRS");
+			
+			tempRoom = masterRoomMap.get("UPSTAIRS HALLWAY");
+			
+			tempRoom = masterRoomMap.get("END_OF_HALLWAY");
+			
+			tempRoom = masterRoomMap.get("MASTER_BEDROOM");
+		
+			tempRoom = masterRoomMap.get("GUEST_BEDROOM");
+			
+			tempRoom = masterRoomMap.get("BATHROOM");
+			inv = tempRoom.getInventory();
+			inv.addItem(new Item("hairdryer"));
+			
+			tempRoom = masterRoomMap.get("DIDDY_KONG");
+			inv.addItem(new Item("DIDDYKONG"));
+			
+			tempRoom = masterRoomMap.get("GHOST_HALL");
+			inv.addItem(new Item("ENEMY"));
+		
+			tempRoom = masterRoomMap.get("MUSIC_HALL");
+			inv = tempRoom.getInventory();
+			inv.addItem(new Item("bagpipes"));
+			inv.addItem(new Item("ENEMY"));
+			
+			tempRoom = masterRoomMap.get("GRAND_HALL");
+			
+			tempRoom = masterRoomMap.get("DINING_ROOM");
+			
+			tempRoom = masterRoomMap.get("FUN_HALL");
+			inv = tempRoom.getInventory();
+			inv.addItem(new Item("baseballBat"));
+			
+			tempRoom = masterRoomMap.get("MAIN_ARMORY");
+			inv = tempRoom.getInventory();
+			inv.addItem(new Item("rifle"));
+			
+			tempRoom = masterRoomMap.get("LUIGI'S_CELL");
+			
+//=======
+//>>>>>>> refs/remotes/origin/master
+>>>>>>> refs/remotes/origin/master
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
