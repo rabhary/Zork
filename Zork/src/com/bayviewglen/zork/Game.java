@@ -23,8 +23,10 @@ import java.util.Scanner;
  */
 
 class Game {
+	private int gameNumber = 0;
 	private Parser parser;
 	private Room currentRoom;
+	private Inventory inv;
 	// This is a MASTER object that contains all of the rooms and is easily
 	// accessible.
 	// The key will be the name of the room -> no spaces (Use all caps and
@@ -92,208 +94,109 @@ class Game {
 	 */
 	public Game() {
 		try {
+			inv = new Inventory();
 			initRooms("data/Rooms.dat");
-
 			currentRoom = masterRoomMap.get("OUTSIDE_OF_FENCE.");
-			
+
 			Room tempRoom = masterRoomMap.get("GARDENERS_SHED");
 			Inventory inv = tempRoom.getInventory();
 			inv.addItem(new Item("pick-axe"));
-			
+
 			tempRoom = masterRoomMap.get("LEAF_PILE");
 			inv = tempRoom.getInventory();
 			inv.addItem(new Item("crowbar"));
-			
+
 			tempRoom = masterRoomMap.get("SEWER_ENTRANCE");
 			inv.addItem(new Item("ENEMY"));
-			
+
 			tempRoom = masterRoomMap.get("FRONT_ENTRANCE");
 			inv.addItem(new Item("ENEMY"));
-			
+
 			tempRoom = masterRoomMap.get("OPEN_FIELD");
 			inv = tempRoom.getInventory();
 			inv.addItem(new Item("bagWithKey"));
 			inv.addItem(new Item("ENEMY"));
-			
+
 			tempRoom = masterRoomMap.get("CLEARING");
-			
+
 			tempRoom = masterRoomMap.get("GUARD_SHED");
 			inv = tempRoom.getInventory();
 			inv.addItem(new Item("spear"));
-			
+
 			tempRoom = masterRoomMap.get("DEAD_END");
 			inv.addItem(new Item("ENEMY"));
-			
+
 			tempRoom = masterRoomMap.get("ARMORY");
 			inv = tempRoom.getInventory();
 			inv.addItem(new Item("sword"));
-			
+
 			tempRoom = masterRoomMap.get("MAIN_DOOR");
 			inv = tempRoom.getInventory();
 			inv.addItem(new Item(""));
-			
+
 			tempRoom = masterRoomMap.get("WINDOW");
-			
+
 			tempRoom = masterRoomMap.get("RIDDLER'S_GATE");
 			inv.addItem(new Item("ENEMY"));
-			
+
 			tempRoom = masterRoomMap.get("SEWER_EXIT");
-		
+
 			tempRoom = masterRoomMap.get("KITCHEN");
 			inv = tempRoom.getInventory();
 			inv.addItem(new Item("spork"));
-			
+
 			tempRoom = masterRoomMap.get("MAIN_HALLWAY");
 			inv = tempRoom.getInventory();
 			inv.addItem(new Item("painting"));
 			inv.addItem(new Item("ENEMY"));
-			
+
 			tempRoom = masterRoomMap.get("LIVING_ROOM");
 			inv = tempRoom.getInventory();
 			inv.addItem(new Item("candlestick"));
 			inv.addItem(new Item("ENEMY"));
-			
+
 			tempRoom = masterRoomMap.get("STAIRS");
-			
+
 			tempRoom = masterRoomMap.get("UPSTAIRS HALLWAY");
-			
+
 			tempRoom = masterRoomMap.get("END_OF_HALLWAY");
-			
+
 			tempRoom = masterRoomMap.get("MASTER_BEDROOM");
-		
+
 			tempRoom = masterRoomMap.get("GUEST_BEDROOM");
-			
+
 			tempRoom = masterRoomMap.get("BATHROOM");
 			inv = tempRoom.getInventory();
 			inv.addItem(new Item("hairdryer"));
-			
+
 			tempRoom = masterRoomMap.get("DIDDY_KONG");
 			inv.addItem(new Item("DIDDYKONG"));
-			
+
 			tempRoom = masterRoomMap.get("GHOST_HALL");
 			inv.addItem(new Item("ENEMY"));
-		
+
 			tempRoom = masterRoomMap.get("MUSIC_HALL");
 			inv = tempRoom.getInventory();
 			inv.addItem(new Item("bagpipes"));
 			inv.addItem(new Item("ENEMY"));
-			
+
 			tempRoom = masterRoomMap.get("GRAND_HALL");
-			
+
 			tempRoom = masterRoomMap.get("DINING_ROOM");
-			
+
 			tempRoom = masterRoomMap.get("FUN_HALL");
 			inv = tempRoom.getInventory();
 			inv.addItem(new Item("baseballBat"));
-			
+
 			tempRoom = masterRoomMap.get("MAIN_ARMORY");
 			inv = tempRoom.getInventory();
 			inv.addItem(new Item("rifle"));
-			
-			tempRoom = masterRoomMap.get("LUIGI'S_CELL");
-			
 
-			currentRoom = masterRoomMap.get("OUTSIDE_OF_FENCE.");
-			
-			Room tempRoom = masterRoomMap.get("GARDENERS_SHED");
-			Inventory inv = tempRoom.getInventory();
-			inv.addItem(new Item("pick-axe"));
-			
-			tempRoom = masterRoomMap.get("LEAF_PILE");
-			inv = tempRoom.getInventory();
-			inv.addItem(new Item("crowbar"));
-			
-			tempRoom = masterRoomMap.get("SEWER_ENTRANCE");
-			inv.addItem(new Item("ENEMY"));
-			
-			tempRoom = masterRoomMap.get("FRONT_ENTRANCE");
-			inv.addItem(new Item("ENEMY"));
-			
-			tempRoom = masterRoomMap.get("OPEN_FIELD");
-			inv = tempRoom.getInventory();
-			inv.addItem(new Item("bagWithKey"));
-			inv.addItem(new Item("ENEMY"));
-			
-			tempRoom = masterRoomMap.get("CLEARING");
-			
-			tempRoom = masterRoomMap.get("GUARD_SHED");
-			inv = tempRoom.getInventory();
-			inv.addItem(new Item("spear"));
-			
-			tempRoom = masterRoomMap.get("DEAD_END");
-			inv.addItem(new Item("ENEMY"));
-			
-			tempRoom = masterRoomMap.get("ARMORY");
-			inv = tempRoom.getInventory();
-			inv.addItem(new Item("sword"));
-			
-			tempRoom = masterRoomMap.get("MAIN_DOOR");
-			inv = tempRoom.getInventory();
-			inv.addItem(new Item(""));
-			
-			tempRoom = masterRoomMap.get("WINDOW");
-			
-			tempRoom = masterRoomMap.get("RIDDLER'S_GATE");
-			inv.addItem(new Item("ENEMY"));
-			
-			tempRoom = masterRoomMap.get("SEWER_EXIT");
-		
-			tempRoom = masterRoomMap.get("KITCHEN");
-			inv = tempRoom.getInventory();
-			inv.addItem(new Item("spork"));
-			
-			tempRoom = masterRoomMap.get("MAIN_HALLWAY");
-			inv = tempRoom.getInventory();
-			inv.addItem(new Item("painting"));
-			inv.addItem(new Item("ENEMY"));
-			
-			tempRoom = masterRoomMap.get("LIVING_ROOM");
-			inv = tempRoom.getInventory();
-			inv.addItem(new Item("candlestick"));
-			inv.addItem(new Item("ENEMY"));
-			
-			tempRoom = masterRoomMap.get("STAIRS");
-			
-			tempRoom = masterRoomMap.get("UPSTAIRS HALLWAY");
-			
-			tempRoom = masterRoomMap.get("END_OF_HALLWAY");
-			
-			tempRoom = masterRoomMap.get("MASTER_BEDROOM");
-		
-			tempRoom = masterRoomMap.get("GUEST_BEDROOM");
-			
-			tempRoom = masterRoomMap.get("BATHROOM");
-			inv = tempRoom.getInventory();
-			inv.addItem(new Item("hairdryer"));
-			
-			tempRoom = masterRoomMap.get("DIDDY_KONG");
-			inv.addItem(new Item("DIDDYKONG"));
-			
-			tempRoom = masterRoomMap.get("GHOST_HALL");
-			inv.addItem(new Item("ENEMY"));
-		
-			tempRoom = masterRoomMap.get("MUSIC_HALL");
-			inv = tempRoom.getInventory();
-			inv.addItem(new Item("bagpipes"));
-			inv.addItem(new Item("ENEMY"));
-			
-			tempRoom = masterRoomMap.get("GRAND_HALL");
-			
-			tempRoom = masterRoomMap.get("DINING_ROOM");
-			
-			tempRoom = masterRoomMap.get("FUN_HALL");
-			inv = tempRoom.getInventory();
-			inv.addItem(new Item("baseballBat"));
-			
-			tempRoom = masterRoomMap.get("MAIN_ARMORY");
-			inv = tempRoom.getInventory();
-			inv.addItem(new Item("rifle"));
-			
 			tempRoom = masterRoomMap.get("LUIGI'S_CELL");
-			
 
+			// =======
+			// >>>>>>> refs/remotes/origin/master
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		parser = new Parser();
@@ -313,7 +216,9 @@ class Game {
 			Command command = parser.getCommand();
 			finished = processCommand(command);
 		}
-		System.out.println("Thank you for playing.  Good bye.");
+		System.out.println("You couldn't save Luigi. You're a horrible brother.");
+		System.out.println("Thanks for playing!");
+
 	}
 
 	/**
@@ -321,8 +226,10 @@ class Game {
 	 */
 	private void printWelcome() {
 		System.out.println();
-		System.out.println("Welcome to Zork!");
-		System.out.println("Zork is a new, incredibly boring adventure game.");
+		System.out.println("Hey Mario!");
+		System.out.println("Ya boi Luigi's been captured!");
+		System.out.println("You gotta kill Diddy Kong to get him back.");
+		System.out.println("Go now!");
 		System.out.println("Type 'help' if you need help.");
 		System.out.println();
 		System.out.println(currentRoom.longDescription());
@@ -342,7 +249,7 @@ class Game {
 		if (commandWord.equals("help"))
 			printHelp();
 		else if (commandWord.equals("go"))
-			goRoom(command);
+			return goRoom(command);
 		else if (commandWord.equals("quit")) {
 			if (command.hasSecondWord())
 				System.out.println("Quit what?");
@@ -352,26 +259,26 @@ class Game {
 			System.out.println("Do you really think you should be eating at a time like this?");
 		} else if (commandWord.equals("inventory")) {
 			printInventory(command);
-			
+
 		} else if (commandWord.equals("n")) {
 			command = new Command("go", "north");
 			goRoom(command);
-			} else if (commandWord.equals("s")) {
-				command = new Command("go", "south");
-				goRoom(command);		}
-		else if (commandWord.equals("e")) {
+		} else if (commandWord.equals("s")) {
+			command = new Command("go", "south");
+			goRoom(command);
+		} else if (commandWord.equals("e")) {
 			command = new Command("go", "east");
 			goRoom(command);
 		} else if (commandWord.equals("w")) {
 			command = new Command("go", "west");
-			goRoom(command);		}
-	 else if (commandWord.equals("u")) {
-		command = new Command("go", "up");
-		goRoom(command);		}
-	else if (commandWord.equals("d")) {
-		command = new Command("go", "down");
-		goRoom(command);		
-	} else if (commandWord.equals("grab")) {
+			goRoom(command);
+		} else if (commandWord.equals("u")) {
+			command = new Command("go", "up");
+			goRoom(command);
+		} else if (commandWord.equals("d")) {
+			command = new Command("go", "down");
+			goRoom(command);
+		} else if (commandWord.equals("grab")) {
 			grab(command);
 
 		} else if (commandWord.equals("look")) {
@@ -382,18 +289,21 @@ class Game {
 		return false;
 	}
 
+	private void printInventory(Command command) {
+		inv.print();
+	}
+
 	private void search(Command command) {
 		String secondWord = command.getSecondWord();
-		if (currentRoom.getRoomName().equals("Leaf Pile")){
+		if (currentRoom.getRoomName().equals("Leaf Pile")) {
 			System.out.println("you searched the leaf pile and found a crowbar");
 		}
-		
-		
+
 	}
 
 	private void look() {
 
-		System.out.println(currentRoom.longDescription());  
+		System.out.println(currentRoom.longDescription());
 	}
 
 	private void grab(Command command) {
@@ -403,33 +313,17 @@ class Game {
 			System.out.println("There is no" + takeWhat + "in this room");
 		else {
 			currentRoom.getInventory().removeItem(i);
-			playerInventory.addItem(i);
+			inv.addItem(i);
 		}
 	}
 
-	private void printInventory(Command command) {
-		// TODO Auto-generated method stub
-
-	}
-		return false;
-	}
-
-	private void printInventory(Command command) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	// implementations of user commands:
 
 	/**
 	 * Print out some help information. Here we print some stupid, cryptic
 	 * message and a list of the command words.
 	 */
 	private void printHelp() {
-		System.out.println("You are lost. You are alone. You wander");
-		System.out.println("around at Monash Uni, Peninsula Campus.");
-		System.out.println();
-		System.out.println("Your command words are:");
+		System.out.println("Your commands are:");
 		parser.showCommands();
 	}
 
@@ -437,11 +331,11 @@ class Game {
 	 * Try to go to one direction. If there is an exit, enter the new room,
 	 * otherwise print an error message.
 	 */
-	private void goRoom(Command command) {
+	private boolean goRoom(Command command) {
 		if (!command.hasSecondWord()) {
 			// if there is no second word, we don't know where to go...
 			System.out.println("Go where?");
-			return;
+			return false;
 		}
 
 		String direction = command.getSecondWord();
@@ -454,7 +348,31 @@ class Game {
 		else {
 			currentRoom = nextRoom;
 			System.out.println(currentRoom.longDescription());
+
+			// you just entered a new room
+			// check room for enemy
+			// if enemy present, attack
+			Item enemy = currentRoom.getInventory().contains("ENEMY");
+			if (enemy != null) {
+				System.out.println(
+						"Press 'Enter' to begin combat with the enemy - keep in mind if you loose the game is over! Be cautious.");
+				if (Combat.combat()) {
+					// attack, if you lose game over, if you win game continues
+					System.out.println("You rolled a " + Combat.playerAttack + " and the enemy rolled a "
+							+ Combat.enemyAttack + "!");
+					System.out.println("You killed the enemy. Advance to the next room.");
+					return false;
+				} else {
+					System.out.println("You rolled a " + Combat.playerAttack + " and the enemy rolled a "
+							+ Combat.enemyAttack + "!");
+					System.out.println("You just died, hold this L.");
+					gameNumber = 1;
+					return true;
+				}
+
+			}
 		}
+		return false;
 	}
 
 }
