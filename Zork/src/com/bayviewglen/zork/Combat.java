@@ -2,10 +2,12 @@ package com.bayviewglen.zork;
 
 public class Combat {
 
-	public boolean combat(){
+	public static int playerAttack = 0;
+	public static int enemyAttack = 0;
+	
+	public static boolean combat(){
 		
-		int playerAttack = 0;
-		int enemyAttack = 0;
+		
 		
 		while (playerAttack == enemyAttack){		
 			playerAttack = (int) (Math.random()*10);
